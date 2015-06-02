@@ -1,0 +1,554 @@
+@charset "utf-8";
+* {
+ padding: 0;
+ margin: 0;
+ border: 0;
+}
+html {
+ height: 100%;
+}
+body {
+ color: #fff;
+}
+.clear {
+ clear: both;
+}
+.bd {
+ background: url(../img/bd.png) center left no-repeat;
+}
+.container {
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+ font-family: "Times New Roman", Times, serif;
+}
+.top, .middle, .bottom {
+ width: 100%;
+ height: auto;
+}
+.top, .container {
+ background-color: #2678b4;
+}
+.middle {
+ background-color: #161616;
+}
+.bottom {
+ background-color: #203c57;
+}
+.top .carrosel, .middle .middle-container, .bottom .bottom-container {
+ margin: 0 auto;
+ width: 80%;
+ height: 100%;
+}
+.middle .middle-container, .bottom .bottom-container {
+ padding: 10em 0;
+}
+ul {
+ list-style: none;
+}
+.logo-menu {
+ position: fixed;
+ width: 70%;
+ height: 5em;
+ margin: 1em auto 0 auto;
+ top: 7px;
+ left: 50%;
+ transform: translate(-50%, 0);
+ background: url(../img/bg-menu.png) repeat-x;
+ border-radius: .4em;
+ z-index:3;
+}
+.logo {
+ width: 30%;
+ height: 100%;
+ background: url(../img/logo.png) center no-repeat;
+ background-size: contain;
+ float: left;
+}
+.menu {
+ width: 70%;
+ float: left;
+ height: 100%;
+}
+.menu ul {
+ width: 100%;
+ height: 100%;
+ padding: 0;
+ line-height: 5em;
+}
+.menu ul li {
+ float: left;
+ width: 20%;
+ height: 100%;
+ text-align: center;
+ margin-right: 0;
+ line-height: 5em;
+}
+.menu ul li:hover {
+ cursor: pointer;
+}
+.menu ul li .ativo, .menu ul li:hover span {
+ float: left;
+ margin: -5px 5%;
+ width: 90%;
+ height: .6em;
+ background: #fff002;
+ border-radius: .2em;
+ opacity: 1;
+}
+.menu ul li a {
+ font-family: Arial, Helvetica, sans-serif;
+ text-decoration: none;
+ font-size: 1.2em;
+ font-weight:bold;
+ color: #1a4f78;
+}
+/* --------------------- FIM MENU CSS ----------------- */
+
+
+/* --------------------- INICIO MENU MOBILE CSS ----------------- */
+.menu-mobile {
+ display: none;
+ z-index: 3;
+}
+.menu-mobile .toggler-2 {
+ width: 40px;
+ height: 5em;
+ float: right;
+ background: url(../img/menu-mobile-inativo.png) center no-repeat;
+}
+.menu-mobile .toggler-2:hover, .menu-mobile .menu-ativo {
+ background: url(../img/menu-mobile-ativo.png) center no-repeat;
+ cursor: pointer;
+ border-top-right-radius: .6em;
+ border-bottom-right-radius: .6em;
+}
+.menu-mobile ul {
+ width: 250px;
+ height: auto;
+ float: right;
+ background: rgba(0,0,0,.5);
+ padding: 0 .8em;
+}
+.menu-mobile .open-menu {
+ display: none;
+}
+.menu-mobile .open-menu li {
+ height: 4em;
+ border-bottom: solid 1px #171717;
+ text-align: left;
+}
+.menu-mobile .open-menu li a {
+ line-height: 3.5em;
+ font-size: 1.3em;
+ color: #fff;
+ ;
+ font-family: Arial, Helvetica, sans-serif;
+ text-decoration: none;
+ padding-left: 20px;
+}
+.menu-mobile .open-menu li:hover, .menu-mobile .open-menu li:hover a, .menu-mobile .open-menu .language a:hover {
+ color: #1979BC;
+ cursor: pointer;
+}
+.menu-mobile .open-menu .contato-top {
+ width: 250px;
+ height: 100px;
+ float: right;
+ background: #171717;
+ padding: 2em .8em;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.menu-mobile .open-menu .contato-top h5 {
+ font-size: 1.4em;
+ line-height: 2.4em;
+}
+.menu-mobile .open-menu .contato-top p {
+ font-size: 1.1em;
+ line-height: 1.8em;
+}
+.menu-mobile .open-menu .contato-top .fone {
+ font-size: 1.9em;
+ line-height: 2em;
+}
+.menu-mobile .open-menu .language {
+ width: 250px;
+ height: 40px;
+ float: right;
+ background: url(../img/bg-menu.png) repeat-x;
+ padding: 0 .8em;
+ font-family: Arial, Helvetica, sans-serif;
+ border-bottom-left-radius: .8em;
+ border-bottom-right-radius: .8em;
+}
+.menu-mobile .open-menu .language a {
+ float: right;
+ text-decoration: none;
+ color: #fff;
+ padding: 0 10px;
+}
+.menu-mobile .open-menu .language p, .menu-mobile .open-menu .language a {
+ font-size: 1.8em;
+ line-height: 40px;
+}
+/* --------------------- FIM MENU MOBILE CSS ----------------- */
+
+/* --------------------- INICIO MIDDLE CSS ----------------- */
+
+.select-box {
+ display: none;
+ width: 80%;
+ margin: 0 auto;
+}
+.select-box select{
+ width: 100%;
+ background: #ffffff;
+ font-size: 1.5em;
+ color: #244563;
+ line-height: 2em;
+ height: 2em;
+ text-transform: uppercase;
+ margin-bottom: 10px;
+}
+.middle-container .portifolio, .middle-container .blogs {
+ width: 40%;
+ float: left;
+ padding-left: 7em;
+}
+.middle-container .portifolio img {
+ width: 100%;
+ margin-bottom: 1em;
+}
+.middle-container .portifolio h3 {
+ font-size: 1.5em;
+ line-height: 1.8em;
+ margin-bottom: 1em;
+}
+.middle-container .portifolio p {
+ font-size: 1.3em;
+ line-height: 1.2em;
+ margin-bottom: 1em;
+}
+.middle-container .portifolio p .legenda {
+ font-size: .8em;
+}
+.middle-container .blogs {
+ background: url(../img/back-blogs.png) top left no-repeat;
+ width: 30%;
+ height: 50em;
+ padding: 5em 0 0 4em;
+ margin-left: 10em;
+}
+.middle-container .blogs .sidebar {
+ padding: 1.2em;
+ background: #1b2732;
+ float: left;
+ margin-left: -13em;
+ margin-top: 4.5em;
+ border: solid 1px #1979bc;
+}
+.middle-container .blogs .sidebar table tr td {
+ text-align: center;
+ padding: .4em 0;
+}
+.blogs ul li a {
+ text-decoration: none;
+ color: #fff;
+ font-size: 1.2em;
+ line-height: 2.8em;
+}
+.blogs ul li:hover a, .blogs ul li .a-ativo{
+ color: #f4e602;
+}
+
+/* --------------------- FIM MIDDLE CSS ----------------- */
+
+/* --------------------- INICIO BOTTOM CSS ----------------- */
+.bottom-container h3 {
+ width: 45%;
+ height: auto;
+ margin: 0 auto 3em auto;
+ padding: .5em;
+ background: url(../img/line.png) bottom right no-repeat, url(../img/line.png) top left no-repeat;
+ font-size: 1.5em;
+ line-height: 1.5em;
+ font-weight: lighter;
+ text-align: center;
+ color: #fff;
+}
+.bottom-container .contato-bottom, .bottom-container .endereco-bottom {
+ width: 40%;
+ float: left;
+ padding-left: 7em;
+}
+.contato-form {
+ width: 100%;
+ background: url(../img/back-contato.png) top right no-repeat;
+}
+.contato-form h5 {
+ font-size: 1.2em;
+ color: #fff;
+ line-height: 1.2em;
+ padding: .7em 0 .7em 0.5em;
+}
+.contato-form input, .contato-form textarea{
+ resize: none;
+ width: 92%;
+ height: 2.5em;
+ padding-left: .3em;
+ margin-bottom: 1em;
+ border-radius: .3em;
+ font-size: 1.2em;
+ line-height: 2.5em;
+}
+.contato-form textarea {
+ height: 10em;
+}
+.contato-form textarea[placeholder]{
+ font-size:1.8em;
+}
+.contato-form .button {
+ width: 92%;
+ text-align: right;
+}
+.contato-form .btn-enviar {
+ width: 18%;
+ margin: 0;
+ background: #1979bc;
+ padding: .4em;
+ border-radius: .3em;
+ color: #fff;
+}
+.contato-form .btn-enviar:hover {
+ cursor: pointer;
+ opacity: .7;
+}
+.endereco-bottom h5 {
+ font-size: 1.4em;
+ line-height: 1.6em;
+}
+.endereco-bottom p {
+ font-size: 1.2em;
+ line-height: 1.3em;
+ color: #fff;
+ font-weight: lighter;
+ margin-bottom: 4em;
+}
+/* --------------------- FIM BOTTOM CSS ----------------- */
+
+
+/* ----------------------------------- Slide/Carrosel CSS ----------------------------------- */
+* {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+.wrapper {
+ max-width: 940px;
+ width: 100%;
+ position: relative;
+ overflow: hidden;
+ margin: 0 auto;
+}
+/**
+ * Use this wrapper only for demo purposes
+ * So you can show the items outside the wrapper
+ */
+
+.wrapper--demo:after, .wrapper--demo:before {
+ content: "";
+ position: absolute;
+ width: 800px;
+ height: 100%;
+ top: 0;
+ left: 100%;
+ background: rgba(255, 255, 255, 0.8);
+ z-index: 2;
+}
+.wrapper--demo:before {
+ left: -800px;
+}
+.carousel {
+ width: 100%;
+ position: relative;
+}
+.carousel .carousel__content {
+ width: auto;
+ position: relative;
+ overflow: hidden;
+ -webkit-backface-visibility: hidden;
+ -webkit-transition: translate3d(0, 0, 0);
+}
+.carousel .carousel__content .item {
+ display: block;
+ float: left;
+ width: 100%;
+ position: relative;
+}
+.carousel .carousel__content .item .title{
+ position: absolute;
+ top: 80%;
+ left: 0;
+ margin: -33px 0 0 50px;
+ padding: 0;
+ font-size: 2.5em;
+ width: 35%;
+ text-align: left;
+ letter-spacing: .3rem;
+ color: #FFF;
+ font-family:Arial, Helvetica, sans-serif;
+}
+.carousel .carousel__content .item .title span{
+ font-size:.4em;
+ color:#0f2e41;
+}
+.carousel .carousel__content .item .img-notice{
+ position: absolute;
+ top: 30%;
+ left:40%;
+ padding:0;
+ width:60%;
+}
+.carousel .carousel__content .item .title--sub {
+ margin-top: 20px;
+ font-size: 1.2em;
+ opacity: .5;
+}
+.carousel .carousel__content .item img {
+ width: 100%;
+ max-width: 100%;
+ display: block;
+}
+.carousel .carousel__nav {
+ position: absolute;
+ width: 100%;
+ top: 50%;
+ margin-top: -17px;
+ left: 0;
+ z-index:1;
+}
+.carousel .carousel__nav .nav {
+ position: absolute;
+ top: 0;
+ color: #000;
+ padding: 8px 12px;
+ font-weight: bold;
+ text-decoration: none;
+ font-size: .8rem;
+ transition: padding .25s ease;
+}
+.carousel .carousel__nav .nav:hover {
+ padding: 8px 20px;
+}
+.carousel .carousel__nav .nav--left {
+ border-radius: 0px 3px 3px 0px;
+}
+.carousel .carousel__nav .nav--right {
+ right: 0;
+ border-radius: 3px 0px 0px 3px;
+}
+/* ----------------------------------- Slide/Carrosel CSS ----------------------------------- */
+
+
+
+
+
+
+
+
+@media screen and (max-width:1280px) {
+ body {
+  font-size: 60%;
+  transition: 1s;
+ }
+ .menu ul li a, ul li a {
+  font-size: 90%;
+  transition: 1s;
+ }
+ .logo-menu {
+  width:80%;
+  transition: 1s;
+ }
+}
+@media screen and (max-width:950px) {
+ body {
+  font-size: 55%;
+ }
+ .middle .middle-container, .bottom .bottom-container {
+  width: 100%;
+  transition: 1s;
+ }
+ .logo-menu, .top .carrosel{
+  width: 94%;
+  transition: 1s;
+ }
+}
+@media screen and (max-width:855px) {
+ body {
+  font-size: 52%;
+ }
+}
+@media screen and (max-width:855px) {
+ body {
+  font-size: 48%;
+ }
+}
+
+@media screen and (max-width:650px) {
+ body {
+  font-size: 60%;
+  transition: 1s;
+ }
+ .menu {
+  display: none;
+ }
+
+ .logo {
+  width: 80%;
+  background: url(../img/logo.png) center left no-repeat;
+  background-size: auto;
+ }
+ .menu-mobile {
+  display: block;
+  width: 20%;
+  float: left;
+ }
+ .carousel .carousel__content .item .title {
+  display: none;
+ }
+ .carousel .carousel__content .item .img-notice{
+  left:25%;
+ }
+ .select-box {
+  display: block;
+  width: 90%;
+ }
+ .middle-container .portifolio {
+  width: 96%;
+  padding:3em;
+  transition: 1s;
+ }
+ .middle-container .portifolio h5{
+	 font-size:2.5em;
+}
+ .middle-container .portifolio p{
+	 font-size:1.5em;
+}
+ 
+ .middle-container .blogs {
+  display: none;
+ }
+ .bottom .contato-bottom {
+  width: 98%;
+  padding-left: 3em;
+  transition: 1s;
+ }
+ .bottom-container h3 {
+  width: 94%;
+ }
+ .bottom .endereco-bottom {
+  display: none;
+  transition: 1s;
+ }
+}
+
